@@ -1,78 +1,65 @@
 {
-  "template": "shipany-template-one",
+  "template": "aiphotoshop",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "AIPHOTOSHOP",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "AIPHOTOSHOP"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "Features",
+          "title": "AI绘画",
           "url": "/#feature",
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "Pricing",
+          "title": "定价",
           "url": "/pricing",
           "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
-    "show_sign": true,
-    "show_theme": true,
-    "show_locale": true
+    "buttons": [],
+    "show_sign": false,
+    "show_theme": false,
+    "show_locale": false
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "AI照片生成，开启创意新纪元",
+    "highlight_text": "AI照片生成",
+    "description": "AIPHOTOSHOP.uk，专为AI绘画爱好者打造的AI照片生成平台。<br/>付费后即可无限制使用AI生成高质量照片，释放你的想象力。",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
+      "label": "上线啦",
+      "title": "🎉 新用户专享优惠",
       "url": "/#pricing"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "🎁 注册即享免费体验额度",
     "buttons": [
       {
-        "title": "Get Started",
+        "title": "立即生成照片",
         "icon": "RiFlashlightFill",
         "url": "/#pricing",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "Join Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "查看作品",
+        "icon": "RiApps2Line",
+        "url": "/showcase",
+        "target": "_self",
         "variant": "outline"
       }
     ],
     "show_happy_users": true,
-    "show_badge": false
+    "show_badge": true
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "AIPHOTOSHOP 技术支持",
     "items": [
       {
         "title": "Next.js",
@@ -82,87 +69,80 @@
         }
       },
       {
-        "title": "React",
+        "title": "OpenAI",
         "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "src": "/imgs/logos/openai.svg",
+          "alt": "OpenAI"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Stable Diffusion",
         "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "src": "/imgs/logos/sd.svg",
+          "alt": "Stable Diffusion"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "Stripe",
         "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "src": "/imgs/logos/stripe.svg",
+          "alt": "Stripe"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
-    "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "title": "什么是 AIPHOTOSHOP？",
+    "label": "平台介绍",
+    "description": "AIPHOTOSHOP.uk 是一款基于AI的照片生成平台，用户只需输入描述，即可一键生成高质量AI照片。支持多种风格、尺寸和创意玩法，满足你的所有AI绘画需求。",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
+        "title": "AI智能生成",
+        "description": "输入描述，AI自动生成高质量照片，简单高效。",
+        "icon": "RiRobot2Line"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
+        "title": "多风格支持",
+        "description": "支持艺术、写实、动漫等多种风格，满足不同创作需求。",
+        "icon": "RiPaletteFill"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
+        "title": "付费即用",
+        "description": "灵活套餐，付费后即可无限制使用AI绘画功能。",
+        "icon": "RiMoneyDollarCircleLine"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose ShipAny",
-    "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "title": "为什么选择 AIPHOTOSHOP？",
+    "label": "平台优势",
+    "description": "AIPHOTOSHOP.uk 致力于为AI绘画用户提供极致体验和高性价比服务。",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
+        "title": "高质量输出",
+        "description": "采用先进AI模型，生成高清、细腻的照片作品。",
+        "icon": "RiImage2Line",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
+        "title": "极速生成",
+        "description": "秒级响应，创意无需等待。",
+        "icon": "RiFlashlightFill",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
+        "title": "安全支付",
+        "description": "集成Stripe支付，安全便捷，支持多种支付方式。",
+        "icon": "RiSecurePaymentLine",
         "image": {
           "src": "/imgs/features/4.png"
         }
@@ -171,8 +151,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
+    "title": "如何使用 AIPHOTOSHOP",
+    "description": "三步开启AI照片创作之旅：",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -180,200 +160,159 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+        "title": "注册账号",
+        "description": "简单注册，立即体验AI照片生成。",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "title": "选择套餐",
+        "description": "灵活付费，满足不同创作需求。",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "输入描述生成",
+        "description": "输入你的创意描述，AI一键生成照片。",
         "image": {
           "src": "/imgs/features/7.png"
-        }
-      },
-      {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
-        "image": {
-          "src": "/imgs/features/8.png"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "核心功能",
+    "description": "AIPHOTOSHOP.uk 为AI绘画用户量身打造的功能体系。",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
-      },
-      {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
-      },
-      {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
-      },
-      {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
+        "title": "AI照片生成",
+        "description": "输入描述，AI自动生成高质量照片。",
         "icon": "RiRobot2Line"
+      },
+      {
+        "title": "多风格选择",
+        "description": "支持多种艺术风格和尺寸。",
+        "icon": "RiPaletteFill"
+      },
+      {
+        "title": "会员付费",
+        "description": "灵活套餐，付费后无限制使用。",
+        "icon": "RiVipCrown2Line"
+      },
+      {
+        "title": "作品管理",
+        "description": "支持个人作品集管理与下载。",
+        "icon": "RiGalleryFill"
+      },
+      {
+        "title": "安全支付",
+        "description": "集成Stripe，支付安全有保障。",
+        "icon": "RiSecurePaymentLine"
       }
     ]
   },
   "stats": {
-    "name": "stats",
-    "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
+    "label": "平台数据",
+    "title": "用户信赖 AIPHOTOSHOP",
+    "description": "数千AI绘画爱好者的共同选择。",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "title": "注册用户",
+        "label": "10,000+",
+        "description": "AI绘画爱好者"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "title": "生成作品",
+        "label": "100,000+",
+        "description": "AI照片"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "满意度",
+        "label": "99%",
+        "description": "用户好评"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
-    "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "label": "用户评价",
+    "title": "真实用户反馈",
+    "description": "看看大家如何评价 AIPHOTOSHOP.uk",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "title": "李明",
+        "label": "插画师",
+        "description": "AIPHOTOSHOP 让我的创作效率提升了好几倍，AI生成的照片质量非常高！",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+        "title": "王芳",
+        "label": "摄影爱好者",
+        "description": "付费套餐很灵活，AI生成的照片风格多样，非常满意。",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "title": "张伟",
+        "label": "自媒体人",
+        "description": "AIPHOTOSHOP.uk 是我内容创作的好帮手，推荐给所有AI绘画爱好者！",
         "image": {
           "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
-        "image": {
-          "src": "/imgs/users/6.png"
         }
       }
     ]
   },
   "faq": {
     "name": "faq",
-    "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "label": "常见问题",
+    "title": "关于 AIPHOTOSHOP 的常见问题",
+    "description": "还有其他疑问？欢迎联系我们。",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "AIPHOTOSHOP 是什么？",
+        "description": "AIPHOTOSHOP.uk 是一个AI照片生成平台，用户付费后可无限制使用AI生成高质量照片。"
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "如何付费和使用？",
+        "description": "注册账号后选择套餐，支付成功即可无限制使用AI绘画功能。"
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "支持哪些风格？",
+        "description": "支持艺术、写实、动漫等多种风格，满足不同创作需求。"
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "生成的照片可以商用吗？",
+        "description": "付费用户生成的照片可用于个人及商业用途，具体请参考平台协议。"
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
-      },
-      {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "支付是否安全？",
+        "description": "平台集成Stripe支付，支持多种支付方式，安全可靠。"
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "开启AI照片创作之旅",
+    "description": "立即注册，体验AI绘画的无限可能！",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "立即体验",
+        "url": "/#pricing",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "查看作品",
+        "url": "/showcase",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -381,74 +320,49 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "AIPHOTOSHOP",
+      "description": "AIPHOTOSHOP.uk，AI照片生成平台，付费后无限制使用AI绘画，释放你的创意。",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "AIPHOTOSHOP"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2024 • AIPHOTOSHOP.uk 保留所有权利。",
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "关于",
           "children": [
             {
-              "title": "Features",
+              "title": "AI绘画",
               "url": "/#feature",
               "target": "_self"
             },
             {
-              "title": "Showcases",
+              "title": "作品展示",
               "url": "/#showcase",
               "target": "_self"
             },
             {
-              "title": "Pricing",
+              "title": "定价",
               "url": "/#pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Resources",
+          "title": "资源",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
+              "title": "帮助中心",
+              "url": "/help",
+              "target": "_self"
             },
             {
-              "title": "Components",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
-            },
-            {
-              "title": "Templates",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "Friends",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "API文档",
+              "url": "/api-docs",
+              "target": "_self"
             }
           ]
         }
@@ -459,25 +373,19 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
+          "url": "https://x.com/aiphotoshop",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
+          "url": "https://github.com/aiphotoshop",
           "target": "_blank"
         },
         {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
-        {
-          "title": "Email",
+          "title": "邮箱",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@aiphotoshop.uk",
           "target": "_self"
         }
       ]
@@ -485,11 +393,11 @@
     "agreement": {
       "items": [
         {
-          "title": "Privacy Policy",
+          "title": "隐私政策",
           "url": "/privacy-policy"
         },
         {
-          "title": "Terms of Service",
+          "title": "服务条款",
           "url": "/terms-of-service"
         }
       ]
