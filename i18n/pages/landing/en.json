@@ -13,42 +13,47 @@
     "nav": {
       "items": [
         {
-          "title": "AI绘画",
+          "title": "AI Art",
           "url": "/#feature",
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "定价",
+          "title": "Pricing",
           "url": "/pricing",
           "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Blog",
+          "url": "/posts",
+          "icon": "RiApps2Line"
         }
       ]
     },
     "buttons": [],
-    "show_sign": false,
-    "show_theme": false,
-    "show_locale": false
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
   },
   "hero": {
-    "title": "AI照片生成，开启创意新纪元",
-    "highlight_text": "AI照片生成",
-    "description": "AIPHOTOSHOP.uk，专为AI绘画爱好者打造的AI照片生成平台。<br/>付费后即可无限制使用AI生成高质量照片，释放你的想象力。",
+    "title": "AI Photo Generation, Unleash Your Creativity",
+    "highlight_text": "AI Photo Generation",
+    "description": "AIPHOTOSHOP.uk is an AI photo generation platform designed for AI art lovers.<br/>After payment, you can use AI to generate high-quality photos without limits and unleash your imagination.",
     "announcement": {
-      "label": "上线啦",
-      "title": "🎉 新用户专享优惠",
+      "label": "Launched",
+      "title": "🎉 Special Offer for New Users",
       "url": "/#pricing"
     },
-    "tip": "🎁 注册即享免费体验额度",
+    "tip": "🎁 Free trial credits for new signups",
     "buttons": [
       {
-        "title": "立即生成照片",
+        "title": "Generate Photos Now",
         "icon": "RiFlashlightFill",
         "url": "/#pricing",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "查看作品",
+        "title": "View Gallery",
         "icon": "RiApps2Line",
         "url": "/showcase",
         "target": "_self",
@@ -59,7 +64,7 @@
     "show_badge": true
   },
   "branding": {
-    "title": "AIPHOTOSHOP 技术支持",
+    "title": "AIPHOTOSHOP Technical Support",
     "items": [
       {
         "title": "Next.js",
@@ -93,55 +98,55 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "什么是 AIPHOTOSHOP？",
-    "label": "平台介绍",
-    "description": "AIPHOTOSHOP.uk 是一款基于AI的照片生成平台，用户只需输入描述，即可一键生成高质量AI照片。支持多种风格、尺寸和创意玩法，满足你的所有AI绘画需求。",
+    "title": "What is AIPHOTOSHOP?",
+    "label": "Platform Introduction",
+    "description": "AIPHOTOSHOP.uk is an AI-powered photo generation platform. Users only need to enter a description to generate high-quality AI photos with one click. Supports multiple styles, sizes, and creative options to meet all your AI art needs.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "AI智能生成",
-        "description": "输入描述，AI自动生成高质量照片，简单高效。",
+        "title": "AI Smart Generation",
+        "description": "Enter a description, and AI will automatically generate high-quality photos, simple and efficient.",
         "icon": "RiRobot2Line"
       },
       {
-        "title": "多风格支持",
-        "description": "支持艺术、写实、动漫等多种风格，满足不同创作需求。",
+        "title": "Multi-style Support",
+        "description": "Supports art, realistic, anime and other styles to meet different creative needs.",
         "icon": "RiPaletteFill"
       },
       {
-        "title": "付费即用",
-        "description": "灵活套餐，付费后即可无限制使用AI绘画功能。",
+        "title": "Pay to Use",
+        "description": "Flexible plans, unlimited use of AI art features after payment.",
         "icon": "RiMoneyDollarCircleLine"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "为什么选择 AIPHOTOSHOP？",
-    "label": "平台优势",
-    "description": "AIPHOTOSHOP.uk 致力于为AI绘画用户提供极致体验和高性价比服务。",
+    "title": "Why Choose AIPHOTOSHOP?",
+    "label": "Platform Advantages",
+    "description": "AIPHOTOSHOP.uk is committed to providing the ultimate experience and high cost performance for AI art users.",
     "items": [
       {
-        "title": "高质量输出",
-        "description": "采用先进AI模型，生成高清、细腻的照片作品。",
+        "title": "High Quality Output",
+        "description": "Using advanced AI models to generate high-definition, detailed photo works.",
         "icon": "RiImage2Line",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "极速生成",
-        "description": "秒级响应，创意无需等待。",
+        "title": "Fast Generation",
+        "description": "Second-level response, no waiting for creativity.",
         "icon": "RiFlashlightFill",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "安全支付",
-        "description": "集成Stripe支付，安全便捷，支持多种支付方式。",
+        "title": "Secure Payment",
+        "description": "Integrated Stripe payment, safe and convenient, supports multiple payment methods.",
         "icon": "RiSecurePaymentLine",
         "image": {
           "src": "/imgs/features/4.png"
@@ -151,8 +156,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 AIPHOTOSHOP",
-    "description": "三步开启AI照片创作之旅：",
+    "title": "How to Use AIPHOTOSHOP",
+    "description": "Start your AI photo journey in three steps:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -160,22 +165,22 @@
     "text_align": "center",
     "items": [
       {
-        "title": "注册账号",
-        "description": "简单注册，立即体验AI照片生成。",
+        "title": "Sign Up",
+        "description": "Register easily and start generating AI photos.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "选择套餐",
-        "description": "灵活付费，满足不同创作需求。",
+        "title": "Choose a Plan",
+        "description": "Flexible pricing for all creative needs.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "输入描述生成",
-        "description": "输入你的创意描述，AI一键生成照片。",
+        "title": "Enter Prompt",
+        "description": "Describe your idea and let AI generate your photo.",
         "image": {
           "src": "/imgs/features/7.png"
         }
@@ -184,86 +189,86 @@
   },
   "feature": {
     "name": "feature",
-    "title": "核心功能",
-    "description": "AIPHOTOSHOP.uk 为AI绘画用户量身打造的功能体系。",
+    "title": "Key Features",
+    "description": "AIPHOTOSHOP.uk offers a feature set tailored for AI art creators.",
     "items": [
       {
-        "title": "AI照片生成",
-        "description": "输入描述，AI自动生成高质量照片。",
+        "title": "AI Photo Generation",
+        "description": "Enter a prompt and AI generates high-quality photos.",
         "icon": "RiRobot2Line"
       },
       {
-        "title": "多风格选择",
-        "description": "支持多种艺术风格和尺寸。",
+        "title": "Multiple Styles",
+        "description": "Supports various art styles and sizes.",
         "icon": "RiPaletteFill"
       },
       {
-        "title": "会员付费",
-        "description": "灵活套餐，付费后无限制使用。",
+        "title": "Membership Plans",
+        "description": "Flexible plans, unlimited use after payment.",
         "icon": "RiVipCrown2Line"
       },
       {
-        "title": "作品管理",
-        "description": "支持个人作品集管理与下载。",
+        "title": "Gallery Management",
+        "description": "Manage and download your personal gallery.",
         "icon": "RiGalleryFill"
       },
       {
-        "title": "安全支付",
-        "description": "集成Stripe，支付安全有保障。",
+        "title": "Secure Payment",
+        "description": "Stripe integration for safe payments.",
         "icon": "RiSecurePaymentLine"
       }
     ]
   },
   "stats": {
-    "label": "平台数据",
-    "title": "用户信赖 AIPHOTOSHOP",
-    "description": "数千AI绘画爱好者的共同选择。",
+    "label": "Platform Stats",
+    "title": "Trusted by AI Art Lovers",
+    "description": "The choice of thousands of AI art creators.",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "注册用户",
+        "title": "Users",
         "label": "10,000+",
-        "description": "AI绘画爱好者"
+        "description": "AI art lovers"
       },
       {
-        "title": "生成作品",
+        "title": "Photos Generated",
         "label": "100,000+",
-        "description": "AI照片"
+        "description": "AI photos"
       },
       {
-        "title": "满意度",
+        "title": "Satisfaction",
         "label": "99%",
-        "description": "用户好评"
+        "description": "Positive feedback"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
-    "label": "用户评价",
-    "title": "真实用户反馈",
-    "description": "看看大家如何评价 AIPHOTOSHOP.uk",
+    "label": "Testimonials",
+    "title": "What Our Users Say",
+    "description": "See how users rate AIPHOTOSHOP.uk",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "李明",
-        "label": "插画师",
-        "description": "AIPHOTOSHOP 让我的创作效率提升了好几倍，AI生成的照片质量非常高！",
+        "title": "Liam",
+        "label": "Illustrator",
+        "description": "AIPHOTOSHOP boosted my productivity. The AI photo quality is amazing!",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "王芳",
-        "label": "摄影爱好者",
-        "description": "付费套餐很灵活，AI生成的照片风格多样，非常满意。",
+        "title": "Sophia",
+        "label": "Photography Enthusiast",
+        "description": "Flexible plans and diverse styles. Very satisfied!",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "张伟",
-        "label": "自媒体人",
-        "description": "AIPHOTOSHOP.uk 是我内容创作的好帮手，推荐给所有AI绘画爱好者！",
+        "title": "Jack",
+        "label": "Content Creator",
+        "description": "AIPHOTOSHOP.uk is my go-to for creative content. Highly recommended!",
         "image": {
           "src": "/imgs/users/3.png"
         }
@@ -272,45 +277,45 @@
   },
   "faq": {
     "name": "faq",
-    "label": "常见问题",
-    "title": "关于 AIPHOTOSHOP 的常见问题",
-    "description": "还有其他疑问？欢迎联系我们。",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Still have questions? Contact us anytime.",
     "items": [
       {
-        "title": "AIPHOTOSHOP 是什么？",
-        "description": "AIPHOTOSHOP.uk 是一个AI照片生成平台，用户付费后可无限制使用AI生成高质量照片。"
+        "title": "What is AIPHOTOSHOP?",
+        "description": "AIPHOTOSHOP.uk is an AI photo generation platform. Pay to unlock unlimited, high-quality AI photo generation."
       },
       {
-        "title": "如何付费和使用？",
-        "description": "注册账号后选择套餐，支付成功即可无限制使用AI绘画功能。"
+        "title": "How do I pay and use?",
+        "description": "Sign up, choose a plan, pay and enjoy unlimited AI art."
       },
       {
-        "title": "支持哪些风格？",
-        "description": "支持艺术、写实、动漫等多种风格，满足不同创作需求。"
+        "title": "What styles are supported?",
+        "description": "Supports art, realistic, anime and more styles for all creative needs."
       },
       {
-        "title": "生成的照片可以商用吗？",
-        "description": "付费用户生成的照片可用于个人及商业用途，具体请参考平台协议。"
+        "title": "Can I use generated photos commercially?",
+        "description": "Paid users can use generated photos for personal and commercial purposes. See our terms for details."
       },
       {
-        "title": "支付是否安全？",
-        "description": "平台集成Stripe支付，支持多种支付方式，安全可靠。"
+        "title": "Is payment secure?",
+        "description": "Stripe integration, multiple payment methods, safe and reliable."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "开启AI照片创作之旅",
-    "description": "立即注册，体验AI绘画的无限可能！",
+    "title": "Start Your AI Photo Journey",
+    "description": "Sign up now and experience the power of AI art!",
     "buttons": [
       {
-        "title": "立即体验",
+        "title": "Try Now",
         "url": "/#pricing",
         "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "查看作品",
+        "title": "View Gallery",
         "url": "/showcase",
         "target": "_self",
         "variant": "outline"
@@ -321,46 +326,46 @@
     "name": "footer",
     "brand": {
       "title": "AIPHOTOSHOP",
-      "description": "AIPHOTOSHOP.uk，AI照片生成平台，付费后无限制使用AI绘画，释放你的创意。",
+      "description": "AIPHOTOSHOP.uk, AI photo generation platform. Pay to unlock unlimited AI art and unleash your creativity.",
       "logo": {
         "src": "/logo.png",
         "alt": "AIPHOTOSHOP"
       },
       "url": "/"
     },
-    "copyright": "© 2024 • AIPHOTOSHOP.uk 保留所有权利。",
+    "copyright": "© 2024 • AIPHOTOSHOP.uk All rights reserved.",
     "nav": {
       "items": [
         {
-          "title": "关于",
+          "title": "About",
           "children": [
             {
-              "title": "AI绘画",
+              "title": "AI Art",
               "url": "/#feature",
               "target": "_self"
             },
             {
-              "title": "作品展示",
+              "title": "Gallery",
               "url": "/#showcase",
               "target": "_self"
             },
             {
-              "title": "定价",
+              "title": "Pricing",
               "url": "/#pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "资源",
+          "title": "Resources",
           "children": [
             {
-              "title": "帮助中心",
+              "title": "Help Center",
               "url": "/help",
               "target": "_self"
             },
             {
-              "title": "API文档",
+              "title": "API Docs",
               "url": "/api-docs",
               "target": "_self"
             }
@@ -383,7 +388,7 @@
           "target": "_blank"
         },
         {
-          "title": "邮箱",
+          "title": "Email",
           "icon": "RiMailLine",
           "url": "mailto:support@aiphotoshop.uk",
           "target": "_self"
@@ -393,11 +398,11 @@
     "agreement": {
       "items": [
         {
-          "title": "隐私政策",
+          "title": "Privacy Policy",
           "url": "/privacy-policy"
         },
         {
-          "title": "服务条款",
+          "title": "Terms of Service",
           "url": "/terms-of-service"
         }
       ]

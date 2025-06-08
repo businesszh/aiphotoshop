@@ -21,23 +21,10 @@
           "title": "定价",
           "url": "/pricing",
           "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "作品展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "立即体验",
-        "url": "/#pricing",
-        "target": "_self",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
+    "buttons": [],
     "show_sign": true,
     "show_theme": true,
     "show_locale": true
