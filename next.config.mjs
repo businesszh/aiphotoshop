@@ -1,6 +1,7 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
 import createNextIntlPlugin from "next-intl/plugin";
 import mdx from "@next/mdx";
+import path from "path";
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
@@ -30,6 +31,13 @@ const nextConfig = {
   },
   async redirects() {
     return [];
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      "@components": path.resolve(__dirname, "components"),
+    };
+    return config;
   },
 };
 
