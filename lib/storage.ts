@@ -77,7 +77,7 @@ export class Storage {
       key: res.Key,
       filename: res.Key?.split("/").pop(),
       url: process.env.STORAGE_DOMAIN
-        ? `${process.env.STORAGE_DOMAIN}/${res.Key}`
+        ? `${process.env.STORAGE_DOMAIN}/${bucket}/${res.Key}`
         : res.Location,
     };
   }
