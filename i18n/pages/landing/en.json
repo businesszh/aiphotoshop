@@ -38,29 +38,9 @@
     "title": "AI Photo Generation, Unleash Your Creativity",
     "highlight_text": "AI Photo Generation",
     "description": "AIPHOTOSHOP.uk is an AI photo generation platform designed for AI art lovers.<br/>After payment, you can use AI to generate high-quality photos without limits and unleash your imagination.",
-    "announcement": {
-      "label": "Launched",
-      "title": "🎉 Special Offer for New Users",
-      "url": "/#pricing"
-    },
-    "tip": "🎁 Free trial credits for new signups",
-    "buttons": [
-      {
-        "title": "Generate Photos Now",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
-        "target": "_self",
-        "variant": "default"
-      },
-      {
-        "title": "View Gallery",
-        "icon": "RiApps2Line",
-        "url": "/showcase",
-        "target": "_self",
-        "variant": "outline"
-      }
-    ],
-    "show_happy_users": true,
+    
+    "buttons": [],
+    "show_happy_users": false,
     "show_badge": true
   },
   "branding": {
@@ -220,6 +200,7 @@
     ]
   },
   "stats": {
+    "disabled": true,
     "label": "Platform Stats",
     "title": "Trusted by AI Art Lovers",
     "description": "The choice of thousands of AI art creators.",
@@ -243,6 +224,7 @@
     ]
   },
   "testimonial": {
+    "disabled": true,
     "name": "testimonial",
     "label": "Testimonials",
     "title": "What Our Users Say",
@@ -313,12 +295,6 @@
         "url": "/#pricing",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      },
-      {
-        "title": "View Gallery",
-        "url": "/showcase",
-        "target": "_self",
-        "variant": "outline"
       }
     ]
   },

@@ -33,29 +33,9 @@
     "title": "AI照片生成，开启创意新纪元",
     "highlight_text": "AI照片生成",
     "description": "AIPHOTOSHOP.uk，专为AI绘画爱好者打造的AI照片生成平台。<br/>付费后即可无限制使用AI生成高质量照片，释放你的想象力。",
-    "announcement": {
-      "label": "上线啦",
-      "title": "🎉 新用户专享优惠",
-      "url": "/#pricing"
-    },
-    "tip": "🎁 注册即享免费体验额度",
-    "buttons": [
-      {
-        "title": "立即生成照片",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
-        "target": "_self",
-        "variant": "default"
-      },
-      {
-        "title": "查看作品",
-        "icon": "RiApps2Line",
-        "url": "/showcase",
-        "target": "_self",
-        "variant": "outline"
-      }
-    ],
-    "show_happy_users": true,
+    
+    "buttons": [],
+    "show_happy_users": false,
     "show_badge": true
   },
   "branding": {
@@ -215,6 +195,7 @@
     ]
   },
   "stats": {
+    "disabled": true,
     "name": "stats",
     "label": "平台数据",
     "title": "用户信赖 AIPHOTOSHOP",
@@ -239,6 +220,7 @@
     ]
   },
   "testimonial": {
+    "disabled": true,
     "name": "testimonial",
     "label": "用户评价",
     "title": "真实用户反馈",
@@ -309,12 +291,6 @@
         "url": "/#pricing",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      },
-      {
-        "title": "查看作品",
-        "url": "/showcase",
-        "target": "_self",
-        "variant": "outline"
       }
     ]
   },

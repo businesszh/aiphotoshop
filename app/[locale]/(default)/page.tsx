@@ -11,6 +11,8 @@ import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
+import Generator from "@/components/generator";
+import Photoshops, { PhotoItem } from "@/components/photoshops";
 
 export async function generateMetadata({
   params,
@@ -38,21 +40,47 @@ export default async function LandingPage({
 }) {
   const { locale } = await params;
   const page = await getLandingPage(locale);
+  const items: PhotoItem[] = [
+    {
+      image: "https://shop.biotechusa.com/cdn/shop/products/GHCapsules_120caps_250ml.png?v=1623353551",
+      title: "ai照片",
+      resolution: "1792×1024",
+      avatar: "n",
+      avatarColor: "bg-green-500"
+    },
+    {
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Latin_digraph_G_H.svg/375px-Latin_digraph_G_H.svg.png",
+      title: "老虎",
+      resolution: "1792×1024",
+      avatar: "h",
+      avatarColor: "bg-orange-500"
+    },
+    {
+      image: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/unn/unn01432/y/39.jpg",
+      title: "大象",
+      resolution: "1792×1024",
+      avatar: "h",
+      avatarColor: "bg-orange-500"
+    },
+    // ...更多图片
+  ];
 
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
+      <Generator />
+      <Photoshops items={items} />
       {/*{page.branding && <Branding section={page.branding} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
-      {page.usage && <Feature3 section={page.usage} />}
+      {page.usage && <Feature3 section={page.usage} />}*/}
       {page.feature && <Feature section={page.feature} />}
       {page.showcase && <Showcase section={page.showcase} />}
       {page.stats && <Stats section={page.stats} />}
       {page.pricing && <Pricing pricing={page.pricing} />}
       {page.testimonial && <Testimonial section={page.testimonial} />}
       {page.faq && <FAQ section={page.faq} />}
-      {page.cta && <CTA section={page.cta} />}*/}
+      {page.cta && <CTA section={page.cta} />}
     </>
   );
 }

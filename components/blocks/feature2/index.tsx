@@ -106,6 +106,10 @@ export default function Feature2({ section }: { section: SectionType }) {
             <Carousel
               opts={{
                 duration: 50,
+                loop: true,
+                align: "center",
+                skipSnaps: false,
+                containScroll: "trimSnaps"
               }}
               setApi={setApi}
               plugins={[Fade()]}
