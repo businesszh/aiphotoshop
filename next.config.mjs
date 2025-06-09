@@ -20,7 +20,7 @@ const withMDX = mdx({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+let nextConfig = {
   output: "standalone",
   reactStrictMode: false,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
@@ -35,21 +35,26 @@ const nextConfig = {
   async redirects() {
     return [];
   },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      "@components": path.resolve(__dirname, "components"),
-    };
-    return config;
-  },
-};
-
-// Make sure experimental mdx flag is enabled
-const configWithMDX = {
-  ...nextConfig,
   experimental: {
     mdxRs: true,
   },
 };
 
-export default withBundleAnalyzer(withNextIntl(withMDX(configWithMDX)));
+// 先包裹插件
+nextConfig = withBundleAnalyzer(withNextIntl(withMDX(nextConfig)));
+
+// 再加 alias
+const originalWebpack = nextConfig.webpack;
+nextConfig.webpack = (config, ...args) => {
+  config.resolve = config.resolve || {};
+  config.resolve.alias = {
+    ...(config.resolve.alias || {}),
+    "@components": path.resolve(__dirname, "components"),
+  };
+  if (originalWebpack) {
+    return originalWebpack(config, ...args);
+  }
+  return config;
+};
+
+export default nextConfig;
