@@ -12,7 +12,8 @@ import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
 import Generator from "@/components/generator";
-import Photoshops, { PhotoItem } from "@/components/photoshops";
+import Photoshops from "@/components/photoshops";
+import { getPhotos } from "@/models/photo";
 
 export async function generateMetadata({
   params,
@@ -40,36 +41,21 @@ export default async function LandingPage({
 }) {
   const { locale } = await params;
   const page = await getLandingPage(locale);
-  const items: PhotoItem[] = [
-    {
-      image: "https://shop.biotechusa.com/cdn/shop/products/GHCapsules_120caps_250ml.png?v=1623353551",
-      title: "ai照片",
-      resolution: "1792×1024",
-      avatar: "n",
-      avatarColor: "bg-green-500"
-    },
-    {
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Latin_digraph_G_H.svg/375px-Latin_digraph_G_H.svg.png",
-      title: "老虎",
-      resolution: "1792×1024",
-      avatar: "h",
-      avatarColor: "bg-orange-500"
-    },
-    {
-      image: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/unn/unn01432/y/39.jpg",
-      title: "大象",
-      resolution: "1792×1024",
-      avatar: "h",
-      avatarColor: "bg-orange-500"
-    },
-    // ...更多图片
-  ];
+  const photos = await getPhotos(1, 20);
+  // 数据库 Photo[] 映射为 PhotoItem[]
+  const photoItems = (photos || []).map(photo => ({
+    image: photo.img_url || "",
+    title: photo.img_description || photo.uuid,
+    resolution: "1792x1024", // 可根据实际数据调整
+    avatar: photo.user_uuid ? photo.user_uuid[0] : "?",
+    avatarColor: "bg-green-500", // 可根据实际需求调整
+  }));
 
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
       <Generator />
-      <Photoshops items={items} />
+      <Photoshops items={photoItems} />
       {/*{page.branding && <Branding section={page.branding} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}

@@ -22,7 +22,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
       <HeroBg />
       <section className="py-24">
         <div className="container">
-          {hero.show_badge && (
+          {/* {hero.show_badge && (
             <div className="flex items-center justify-center mb-8">
               <img
                 src="/imgs/badges/phdaily.svg"
@@ -30,7 +30,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
                 className="h-10 object-cover"
               />
             </div>
-          )}
+          )} */}
           <div className="text-center">
             {hero.announcement && (
               <Link

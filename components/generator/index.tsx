@@ -1,13 +1,32 @@
 "use client";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 export default function Generator() {
   const [description, setDescription] = useState("");
 
   const handleGenerate = (e: React.FormEvent) => {
     e.preventDefault();
-    // 这里可以添加生成逻辑
-    alert(`Generate: ${description}`);
+    if (!description.trim()) {
+      toast.error("Please enter a description");
+      return;
+    }
+    requestGenWallpaper();
+  };
+
+  const requestGenWallpaper = async () => {
+    try {
+      const resp = await fetch("/api/gen-photo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ description }),
+      });
+      const data = await resp.json();
+      console.log("photo", data);
+      // 这里可以根据 data 做后续处理，比如显示图片等
+    } catch (e) {
+      toast.error("生成失败，请重试");
+    }
   };
 
   return (

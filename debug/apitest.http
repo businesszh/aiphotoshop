@@ -45,3 +45,13 @@ Authorization: Bearer {{apiKey}}
   "provider": "openrouter",
   "model": "deepseek/deepseek-r1"
 }
+
+
+### gen photo
+POST {{baseUrl}}/api/gen-photo
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "description": "a monkey playing guitar"
+}

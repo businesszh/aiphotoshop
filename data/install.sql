@@ -102,3 +102,12 @@ CREATE TABLE feedbacks (
     content TEXT,
     rating INT
 );
+CREATE TABLE photos (
+  id SERIAL PRIMARY KEY,
+  uuid VARCHAR(255) UNIQUE NOT NULL,
+  user_uuid VARCHAR(255),
+  created_at timestamptz,
+  img_description TEXT,
+  img_url VARCHAR(255),
+  status VARCHAR(50)
+);

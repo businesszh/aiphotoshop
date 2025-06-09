@@ -21,6 +21,11 @@
           "title": "定价",
           "url": "/pricing",
           "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "博客",
+          "url": "/posts",
+          "icon": "RiApps2Line"
         }
       ]
     },

@@ -5,6 +5,7 @@ import { getOrderCountByDate, getPaidOrdersTotal } from "@/models/order";
 import { getUserCountByDate, getUsersTotal } from "@/models/user";
 import { getFeedbacksTotal } from "@/models/feedback";
 import { getPostsTotal } from "@/models/post";
+import { getPhotosTotal } from "@/models/photo";
 import { DataCard } from "@/types/blocks/base";
 
 export default async function () {
@@ -12,6 +13,7 @@ export default async function () {
   const totalUsers = await getUsersTotal();
   const totalFeedbacks = await getFeedbacksTotal();
   const totalPosts = await getPostsTotal();
+  const totalPhotos = await getPhotosTotal();
 
   const dataCards: DataCard[] = [
     {
@@ -25,6 +27,12 @@ export default async function () {
       label: "",
       value: (totalPaidOrders || 0).toString(),
       description: "User Paid Orders in total",
+    },
+    {
+      title: "Generated Photos",
+      label: "",
+      value: (totalPhotos || 0).toString(),
+      description: "AI photos generated in total",
     },
     {
       title: "System Posts",
