@@ -11,9 +11,10 @@ import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
-import Generator from "@/components/generator";
-import Photoshops from "@/components/photoshops";
 import { getPhotos } from "@/models/photo";
+import { auth } from "@/auth";
+import GeneratorClientWrapper from "@/components/GeneratorClientWrapper";
+import Photoshops from "@/components/photoshops";
 
 export async function generateMetadata({
   params,
@@ -42,8 +43,19 @@ export default async function LandingPage({
   const { locale } = await params;
   const page = await getLandingPage(locale);
   const photos = await getPhotos(1, 20);
+
+  // 获取当前登录用户
+  const session = await auth();
+  const user_uuid = session?.user?.uuid;
+
+  // 过滤逻辑：所有用户看到 online，登录用户还能看到自己 created 的
+  const filteredPhotos = (photos || []).filter(photo =>
+    photo.status === "online" ||
+    (user_uuid && photo.status === "created" && photo.user_uuid === user_uuid)
+  );
+
   // 数据库 Photo[] 映射为 PhotoItem[]
-  const photoItems = (photos || []).map(photo => ({
+  const photoItems = filteredPhotos.map(photo => ({
     image: photo.img_url || "",
     title: photo.img_description || photo.uuid,
     resolution: "1792x1024", // 可根据实际数据调整
@@ -54,7 +66,7 @@ export default async function LandingPage({
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
-      <Generator />
+      <GeneratorClientWrapper />
       <Photoshops items={photoItems} />
       {/*{page.branding && <Branding section={page.branding} />}
       {page.introduce && <Feature1 section={page.introduce} />}

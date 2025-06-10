@@ -7,9 +7,9 @@ import { AppContextProvider } from "@/contexts/app";
 import { Inter as FontSans } from "next/font/google";
 import { Metadata } from "next";
 import { NextAuthSessionProvider } from "@/auth/session";
-import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/providers/theme";
 import { cn } from "@/lib/utils";
+import IntlClientWrapper from "@/components/IntlClientWrapper";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -19,9 +19,9 @@ const fontSans = FontSans({
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale } = params;
   const t = await getTranslations();
 
   return {
@@ -39,10 +39,10 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }>) {
-  const { locale } = await params;
-  const messages = await getMessages();
+  const { locale } = params;
+  const messages = await getMessages({ locale });
   const webUrl = process.env.NEXT_PUBLIC_WEB_URL || "";
   const googleAdsenseCode = process.env.NEXT_PUBLIC_GOOGLE_ADCODE || "";
 
@@ -73,7 +73,7 @@ export default async function RootLayout({
           fontSans.variable
         )}
       >
-        <NextIntlClientProvider messages={messages}>
+        <IntlClientWrapper messages={messages} locale={locale}>
           <NextAuthSessionProvider>
             <AppContextProvider>
               <ThemeProvider attribute="class" disableTransitionOnChange>
@@ -81,7 +81,7 @@ export default async function RootLayout({
               </ThemeProvider>
             </AppContextProvider>
           </NextAuthSessionProvider>
-        </NextIntlClientProvider>
+        </IntlClientWrapper>
       </body>
     </html>
   );

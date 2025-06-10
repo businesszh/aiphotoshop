@@ -22,10 +22,10 @@ export default async function AdminLayout({
 
   const sidebar: Sidebar = {
     brand: {
-      title: "ShipAny",
+      title: "aiphotoshop",
       logo: {
         src: "/logo.png",
-        alt: "ShipAny",
+        alt: "aiphotoshop",
       },
       url: "/admin",
     },
@@ -57,8 +57,8 @@ export default async function AdminLayout({
           icon: "RiArticleLine",
         },
         {
-          title: "Feedbacks",
-          url: "/admin/feedbacks",
+          title: "Photos",
+          url: "/admin/photos",
           icon: "RiMessage2Line",
         },
       ],

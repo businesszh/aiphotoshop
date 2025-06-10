@@ -22,7 +22,7 @@ export default function Photoshops({ items }: { items: PhotoItem[] }) {
           <div className="flex-1 flex flex-col justify-between p-4">
             <div className="text-base font-medium text-gray-800 truncate mb-2">{item.title}</div>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-xs text-gray-500">{item.resolution}</span>
+              {/* <span className="text-xs text-gray-500">{item.resolution}</span> */}
               <span
                 className={`ml-2 w-7 h-7 flex items-center justify-center rounded-full text-white text-sm font-bold ${item.avatarColor || "bg-green-500"}`}
               >

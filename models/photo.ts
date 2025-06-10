@@ -34,3 +34,13 @@ export async function getPhotosTotal(): Promise<number | undefined> {
 
   return data[0].count;
 }
+
+export async function updatePhotoStatus(uuid: string, status: string) {
+  const supabase = getSupabaseClient();
+  const { data, error } = await supabase
+    .from("photos")
+    .update({ status })
+    .eq("uuid", uuid);
+  if (error) throw error;
+  return data;
+}
