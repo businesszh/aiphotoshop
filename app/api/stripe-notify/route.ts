@@ -7,6 +7,8 @@ export async function POST(req: Request) {
     const stripePrivateKey = process.env.STRIPE_PRIVATE_KEY;
     const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
+    console.log('STRIPE_PRIVATE_KEY:', stripePrivateKey);
+
     if (!stripePrivateKey || !stripeWebhookSecret) {
       throw new Error("invalid stripe config");
     }

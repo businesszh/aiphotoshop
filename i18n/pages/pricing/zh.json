@@ -3,106 +3,95 @@
     "name": "pricing",
     "label": "定价",
     "title": "定价",
-    "description": "获取 ShipAny 的所有功能，快速启动您的 AI SaaS 创业项目。",
+    "description": "获取 aiphotoshop 的所有功能，体验智能 AI 修图服务。",
     "groups": [],
     "items": [
       {
         "title": "入门版",
-        "description": "开始您的第一个 SaaS 创业项目。",
+        "description": "适合首次体验 AI 修图服务的用户。",
         "features_title": "包含",
         "features": [
-          "100 积分，有效期 1 个月",
-          "NextJS 模板",
-          "SEO 友好结构",
-          "Stripe 支付",
-          "Supabase 数据存储",
-          "Google OAuth 和一键登录",
-          "国际化支持"
+          "50 积分，有效期 1 个月",
+          "AI 智能修图",
+          "批量图片处理",
+          "高分辨率下载",
+          "隐私保护"
+        ],
+        "interval": "one-time",
+        "amount": 990,
+        "cn_amount": 6990,
+        "currency": "USD",
+        "price": "$9.9",
+        "original_price": "$19.9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "一次付费，畅享修图服务！",
+        "button": {
+          "title": "购买 aiphotoshop",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "aiphotoshop 入门版",
+        "credits": 50,
+        "valid_months": 1
+      },
+      {
+        "title": "标准版",
+        "description": "适合需要更多修图次数的用户。",
+        "features_title": "包含入门版所有功能，另加",
+        "features": [
+          "300 积分，有效期 3 个月",
+          "优先处理队列",
+          "专属客服支持"
+        ],
+        "interval": "one-time",
+        "amount": 4900,
+        "cn_amount": 34900,
+        "currency": "USD",
+        "price": "$49",
+        "original_price": "$69",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "一次付费，畅享修图服务！",
+        "button": {
+          "title": "购买 aiphotoshop",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "aiphotoshop 标准版",
+        "credits": 300,
+        "valid_months": 3
+      },
+      {
+        "title": "高级版",
+        "description": "适合专业用户和企业客户。",
+        "features_title": "包含标准版所有功能，另加",
+        "features": [
+          "1000 积分，有效期 6 个月",
+          "API 接口调用",
+          "团队协作功能",
+          "定制化服务"
         ],
         "interval": "one-time",
         "amount": 9900,
         "cn_amount": 69900,
         "currency": "USD",
         "price": "$99",
-        "original_price": "$199",
+        "original_price": "$129",
         "unit": "USD",
         "is_featured": false,
-        "tip": "一次付费，无限项目！",
+        "tip": "一次付费，畅享修图服务！",
         "button": {
-          "title": "获取 ShipAny",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "starter",
-        "product_name": "ShipAny 模板入门版",
-        "credits": 100,
-        "valid_months": 1
-      },
-      {
-        "title": "标准版",
-        "description": "快速启动您的 SaaS 创业项目。",
-        "label": "热门",
-        "features_title": "包含入门版所有功能，另加",
-        "features": [
-          "200 积分，有效期 3 个月",
-          "Vercel 或 Cloudflare 部署",
-          "隐私和条款生成",
-          "Google Analytics 集成",
-          "Google Search Console 集成",
-          "Discord 社区",
-          "首次发布技术支持",
-          "终身更新"
-        ],
-        "interval": "one-time",
-        "amount": 19900,
-        "cn_amount": 139900,
-        "currency": "USD",
-        "price": "$199",
-        "original_price": "$299",
-        "unit": "USD",
-        "is_featured": true,
-        "tip": "一次付费，无限项目！",
-        "button": {
-          "title": "获取 ShipAny",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard",
-        "product_name": "ShipAny 模板标准版",
-        "credits": 200,
-        "valid_months": 3
-      },
-      {
-        "title": "高级版",
-        "description": "构建任何 AI SaaS 创业项目。",
-        "features_title": "包含标准版所有功能，另加",
-        "features": [
-          "300 积分，有效期 1 年",
-          "AI 业务功能",
-          "用户中心",
-          "积分系统",
-          "SaaS API 销售",
-          "管理系统",
-          "优先技术支持"
-        ],
-        "interval": "one-time",
-        "amount": 29900,
-        "cn_amount": 199900,
-        "currency": "USD",
-        "price": "$299",
-        "original_price": "$399",
-        "unit": "USD",
-        "is_featured": false,
-        "tip": "一次付费，无限项目！",
-        "button": {
-          "title": "获取 ShipAny",
+          "title": "购买 aiphotoshop",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium",
-        "product_name": "ShipAny 模板高级版",
-        "credits": 300,
-        "valid_months": 12
+        "product_name": "aiphotoshop 高级版",
+        "credits": 1000,
+        "valid_months": 6
       }
     ]
   }
