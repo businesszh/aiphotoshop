@@ -19,9 +19,9 @@ const fontSans = FontSans({
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations();
 
   return {
@@ -39,10 +39,10 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = params;
-  const messages = await getMessages({ locale });
+  const { locale } = await params;
+  const messages = await getMessages();
   const webUrl = process.env.NEXT_PUBLIC_WEB_URL || "";
   const googleAdsenseCode = process.env.NEXT_PUBLIC_GOOGLE_ADCODE || "";
 
